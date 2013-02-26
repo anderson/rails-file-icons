@@ -14,8 +14,6 @@ module Icon
       known_extensions
     end
   
- 
-  
   def self.for_filename filename
     for_ext File.extname(filename)
   end

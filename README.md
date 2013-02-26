@@ -1,6 +1,7 @@
-# Rails::File::Icons
+Rails File Icons
+---
 
-TODO: Write a gem description
+Simple file icons that use the Rails Asset Pipeline.
 
 ## Installation
 
@@ -18,7 +19,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Render a file icon for a given filename in a view.
+    
+    <%= image_tag Icon.for_filename('myfile.jpg') %>
+
+Get the image path for a given file extension. (leading dot is irrelevant)
+
+    Icon.for_ext '.jpg'
+    > 'fileicons/file_extension_jpg.png'
+
+    Icon.for_ext 'gif'
+    > 'fileicons/file_extension_gif.png'
 
 ## Contributing
 
