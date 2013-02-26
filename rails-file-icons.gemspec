@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rails/file/icons/version'
+require 'rails_file_icons/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "rails-file-icons"
-  gem.version       = Rails::File::Icons::VERSION
+  gem.version       = RailsFileIcons::VERSION
   gem.authors       = ["Chris Aitchison"]
   gem.email         = ["cmaitchison@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
