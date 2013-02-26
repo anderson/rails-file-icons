@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rails_file_icons/version'
+require 'rails_file_icons'
 
 Gem::Specification.new do |gem|
   gem.name          = "rails-file-icons"
   gem.version       = RailsFileIcons::VERSION
   gem.authors       = ["Chris Aitchison"]
   gem.email         = ["cmaitchison@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{File Icons for Rails}
+  gem.summary       = %q{Easy File Icons using the Rails Asset Pipeline}
   gem.homepage      = ""
   gem.license       = "MIT"
 
@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency "rake"
+  gem.add_development_dependency "rails", "~> 3.0"
 end
