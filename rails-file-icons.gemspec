@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rails_file_icons'
+require 'rails_file_icons/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "rails-file-icons"
@@ -19,5 +19,4 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_development_dependency "rake"
-  gem.add_development_dependency "rails", "~> 3.0"
 end
