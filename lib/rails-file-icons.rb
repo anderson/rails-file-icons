@@ -13,13 +13,16 @@ module Icon
       known_extensions[ext] = "fileicons/file_extension_#{ext}.png"
       known_extensions
     end
-  
+
+  MSOFFICE_X_EXTENSIONS = %w{ docx xlsx pptx }
+
   def self.for_filename filename
     for_ext File.extname(filename)
   end
 
   def self.for_ext file_extension
     ext = file_extension.start_with?('.') ? file_extension[1..-1] : file_extension
+    ext = ext[0..-2] if MSOFFICE_X_EXTENSIONS.include?(ext)
     KNOWN_EXTENSIONS[ext.downcase] || 'fileicons/file_extension_unknown.png'
   end
 end
